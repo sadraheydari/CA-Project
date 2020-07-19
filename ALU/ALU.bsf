@@ -58,6 +58,20 @@ applicable agreement for further details.
 		(text "result[31..0]" (rect 120 27 187 41)(font "Arial" (font_size 8)))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "equ" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "equ" (rect 166 43 187 57)(font "Arial" (font_size 8)))
+		(line (pt 208 48)(pt 192 48)(line_width 1))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "les" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "les" (rect 171 59 187 73)(font "Arial" (font_size 8)))
+		(line (pt 208 64)(pt 192 64)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 192 112)(line_width 1))
 	)
