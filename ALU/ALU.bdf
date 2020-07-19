@@ -203,41 +203,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 344 48 512 144)
-	(text "mul_32bit" (rect 56 1 122 17)(font "Arial" (font_size 10)))
-	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 40)
-		(input)
-		(text "dataa[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "dataa[31..0]" (rect 4 27 71 41)(font "Arial" (font_size 8)))
-		(line (pt 0 40)(pt 72 40)(line_width 3))
-	)
-	(port
-		(pt 0 72)
-		(input)
-		(text "datab[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "datab[31..0]" (rect 4 59 71 73)(font "Arial" (font_size 8)))
-		(line (pt 0 72)(pt 72 72)(line_width 3))
-	)
-	(port
-		(pt 168 56)
-		(output)
-		(text "result[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "result[31..0]" (rect 108 43 175 57)(font "Arial" (font_size 8)))
-		(line (pt 168 56)(pt 104 56)(line_width 3))
-	)
-	(drawing
-		(text "Signed" (rect 105 57 138 69)(font "Arial" ))
-		(text "multiplication" (rect 105 67 168 79)(font "Arial" ))
-		(line (pt 82 50)(pt 94 62)(line_width 3))
-		(line (pt 82 62)(pt 94 50)(line_width 3))
-		(line (pt 72 40)(pt 77 45)(line_width 3))
-		(line (pt 72 72)(pt 77 67)(line_width 3))
-		(circle (rect 72 40 104 72)(line_width 1))
-	)
-)
-(symbol
 	(rect 344 176 528 272)
 	(text "divider_32bit" (rect 57 2 140 18)(font "Arial" (font_size 10)))
 	(text "inst6" (rect 8 80 31 92)(font "Arial" ))
@@ -885,6 +850,41 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 168 80)(line_width 1))
 	)
 )
+(symbol
+	(rect 344 48 512 144)
+	(text "mul_2x32bit" (rect 49 1 131 17)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "dataa[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[31..0]" (rect 4 27 71 41)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 72 40)(line_width 3))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "datab[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "datab[31..0]" (rect 4 59 71 73)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 72 72)(line_width 3))
+	)
+	(port
+		(pt 168 56)
+		(output)
+		(text "result[63..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[63..0]" (rect 108 43 175 57)(font "Arial" (font_size 8)))
+		(line (pt 168 56)(pt 104 56)(line_width 3))
+	)
+	(drawing
+		(text "Signed" (rect 105 57 138 69)(font "Arial" ))
+		(text "multiplication" (rect 105 67 168 79)(font "Arial" ))
+		(line (pt 82 50)(pt 94 62)(line_width 3))
+		(line (pt 82 62)(pt 94 50)(line_width 3))
+		(line (pt 72 40)(pt 77 45)(line_width 3))
+		(line (pt 72 72)(pt 77 67)(line_width 3))
+		(circle (rect 72 40 104 72)(line_width 1))
+	)
+)
 (connector
 	(pt 504 -48)
 	(pt 512 -48)
@@ -1001,11 +1001,6 @@ applicable agreement for further details.
 (connector
 	(pt 512 -48)
 	(pt 512 -176)
-	(bus)
-)
-(connector
-	(pt 520 104)
-	(pt 520 -160)
 	(bus)
 )
 (connector
@@ -1126,11 +1121,6 @@ applicable agreement for further details.
 (connector
 	(pt 528 -144)
 	(pt 632 -144)
-	(bus)
-)
-(connector
-	(pt 520 -160)
-	(pt 632 -160)
 	(bus)
 )
 (connector
@@ -1411,6 +1401,23 @@ applicable agreement for further details.
 (connector
 	(pt 792 -88)
 	(pt 800 -88)
+	(bus)
+)
+(connector
+	(text "temp_result[63..0]" (rect 504 18 516 107)(font "Arial" )(vertical))
+	(pt 520 104)
+	(pt 520 40)
+	(bus)
+)
+(connector
+	(pt 520 -160)
+	(pt 632 -160)
+	(bus)
+)
+(connector
+	(text "temp_result[31..0]" (rect 504 -78 516 11)(font "Arial" )(vertical))
+	(pt 520 -160)
+	(pt 520 8)
 	(bus)
 )
 (junction (pt 312 -208))
