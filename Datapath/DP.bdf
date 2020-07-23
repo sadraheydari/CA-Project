@@ -20,11 +20,6 @@ applicable agreement for further details.
 */
 //#pragma file_not_in_maxplusii_format
 (header "graphic" (version "1.3"))
-(alias "<<__$DEF_ALIAS161>>""Read_R1[4..0];Read_R2[4..0];Write_R[4..0];Write_Data[31..0];Bus_Read_R1[4..0];Bus_Read_R2[4..0];Bus_Write_R[4..0]")
-(alias "<<Bus_Read_Write_R[31..0]>>""Read_Write_R[31..0];Bus_Read_Write_R[31..0]")
-(alias "<<__$DEF_ALIAS347>>""Read_Write_R[31..0];Bus_Read_Write_R[31..0]")
-(alias "<<Read_Data1[31..0]>>""Read_Data1[31..0];Read_Data2[31..0];Bus_Read_Data1[31..0]")
-(alias "<<__$DEF_ALIAS193>>""Read_Data1[31..0];Read_Data2[31..0];Bus_Read_Data1[31..0]")
 (pin
 	(input)
 	(rect 1304 272 1480 288)
@@ -637,46 +632,75 @@ applicable agreement for further details.
 	)
 	(flipy)
 )
-(block
-	(rect 904 320 1216 544)
-	(text "Register Memory" (rect 5 5 100 19)(font "Arial" (font_size 8)))	(text "inst1" (rect 5 210 28 222)(font "Arial" ))	(block_io "Read_R1[4..0]" (input))
-	(block_io "Read_R2[4..0]" (input))
-	(block_io "Write_R[4..0]" (input))
-	(block_io "Write_Data[31..0]" (input))
-	(block_io "Read_Data1[31..0]" (output))
-	(block_io "Read_Data2[31..0]" (output))
-	(block_io "Read_Write_R[31..0]" (output))
-	(mapper
-		(pt 0 208)
+(symbol
+	(rect 928 400 1184 560)
+	(text "Register_Memory" (rect 5 0 104 14)(font "Arial" (font_size 8)))
+	(text "inst14" (rect 8 144 37 156)(font "Arial" ))
+	(port
+		(pt 0 32)
 		(input)
-		(mapping "Write_Data[31..0]" "result[31..0]" )
-		(annotation_block (mapping)(rect 928 528 1024 560))
+		(text "read_r1[4..0]" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "read_r1[4..0]" (rect 21 27 94 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
-	(mapper
+	(port
+		(pt 0 48)
+		(input)
+		(text "read_r2[4..0]" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "read_r2[4..0]" (rect 21 43 94 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "write_r[4..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "write_r[4..0]" (rect 21 59 90 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "write_data[31..0]" (rect 0 0 96 14)(font "Arial" (font_size 8)))
+		(text "write_data[31..0]" (rect 21 75 117 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 91 36 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
 		(pt 0 112)
 		(input)
-		(mapping "Read_R1[4..0]" "Bus_Read_R1[4..0]" )
-		(mapping "Read_R2[4..0]" "Bus_Read_R2[4..0]" )
-		(mapping "Write_R[4..0]" "Bus_Write_R[4..0]" )
-		(annotation_block (mapping)(rect 928 464 1056 520))
+		(text "clear" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "clear" (rect 21 107 49 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
-	(mapper
-		(pt 312 120)
+	(port
+		(pt 256 32)
 		(output)
-		(mapping "Read_Data1[31..0]" "Bus_Read_Data1[31..0]" )
-		(annotation_block (mapping)(rect 1064 464 1200 496))
+		(text "data1[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "data1[31..0]" (rect 168 27 235 41)(font "Arial" (font_size 8)))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
 	)
-	(mapper
-		(pt 312 184)
+	(port
+		(pt 256 48)
 		(output)
-		(mapping "Read_Data2[31..0]" "Bus_Read_Data2[31..0]" )
-		(annotation_block (mapping)(rect 1064 504 1200 536))
+		(text "data2[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "data2[31..0]" (rect 168 43 235 57)(font "Arial" (font_size 8)))
+		(line (pt 256 48)(pt 240 48)(line_width 3))
 	)
-	(mapper
-		(pt 176 224)
+	(port
+		(pt 256 64)
 		(output)
-		(mapping "Read_Write_R[31..0]" "Bus_Read_Write_R[31..0]" )
-		(annotation_block (mapping)(rect 912 568 1040 600))
+		(text "write_r_data[31..0]" (rect 0 0 108 14)(font "Arial" (font_size 8)))
+		(text "write_r_data[31..0]" (rect 127 59 235 73)(font "Arial" (font_size 8)))
+		(line (pt 256 64)(pt 240 64)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 144)(line_width 1))
 	)
 )
 (connector
@@ -695,20 +719,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1248 440)
-	(pt 1248 96)
-	(bus)
-)
-(connector
 	(pt 1248 96)
 	(pt 472 96)
 	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS193>>" (rect 0 0 118 12)(font "Arial" )(invisible))
-	(pt 1248 440)
-	(pt 1424 440)
-	(conduit)
 )
 (connector
 	(pt 472 96)
@@ -719,12 +732,6 @@ applicable agreement for further details.
 	(pt 472 16)
 	(pt 536 16)
 	(bus)
-)
-(connector
-	(text "<<Read_Data1[31..0]>>" (rect 1216 424 1332 436)(font "Arial" ))
-	(pt 1216 440)
-	(pt 1248 440)
-	(conduit)
 )
 (connector
 	(pt 688 16)
@@ -792,18 +799,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1240 504)
-	(pt 1240 600)
-	(bus)
-)
-(connector
 	(pt 1240 600)
 	(pt 1568 600)
-	(bus)
-)
-(connector
-	(pt 1256 504)
-	(pt 1240 504)
 	(bus)
 )
 (connector
@@ -815,12 +812,6 @@ applicable agreement for further details.
 	(pt 1496 616)
 	(pt 1496 656)
 	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS347>>" (rect 0 0 118 12)(font "Arial" )(invisible))
-	(pt 1080 576)
-	(pt 1120 576)
-	(conduit)
 )
 (connector
 	(pt 2440 384)
@@ -835,17 +826,6 @@ applicable agreement for further details.
 (connector
 	(pt 872 712)
 	(pt 2456 712)
-	(bus)
-)
-(connector
-	(pt 872 528)
-	(pt 872 712)
-	(bus)
-)
-(connector
-	(text "result[31..0]" (rect 872 512 931 524)(font "Arial" ))
-	(pt 872 528)
-	(pt 904 528)
 	(bus)
 )
 (connector
@@ -864,24 +844,6 @@ applicable agreement for further details.
 	(text "Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15], Imm[15..0]" (rect 776 632 1604 644)(font "Arial" ))
 	(pt 856 616)
 	(pt 1256 616)
-	(bus)
-)
-(connector
-	(text "Bus_Read_Data2[31..0]" (rect 1216 488 1334 500)(font "Arial" ))
-	(pt 1240 504)
-	(pt 1216 504)
-	(bus)
-)
-(connector
-	(text "<<Bus_Read_Write_R[31..0]>>" (rect 1064 478 1076 630)(font "Arial" )(vertical))
-	(pt 1080 544)
-	(pt 1080 576)
-	(conduit)
-)
-(connector
-	(text "Imm[15..0], Bus_Read_Write_R[15..0]" (rect 2176 376 2365 388)(font "Arial" ))
-	(pt 2288 392)
-	(pt 2176 392)
 	(bus)
 )
 (connector
@@ -910,12 +872,6 @@ applicable agreement for further details.
 	(text "clk" (rect 202 424 216 436)(font "Arial" ))
 	(pt 224 440)
 	(pt 192 440)
-)
-(connector
-	(text "<<__$DEF_ALIAS161>>" (rect 0 0 118 12)(font "Arial" )(invisible))
-	(pt 832 432)
-	(pt 904 432)
-	(conduit)
 )
 (connector
 	(text "Imm[15..0]" (rect 808 504 862 516)(font "Arial" ))
@@ -1012,12 +968,6 @@ applicable agreement for further details.
 (connector
 	(pt 2160 376)
 	(pt 2288 376)
-	(bus)
-)
-(connector
-	(text "alu_result" (rect 1682 400 1729 412)(font "Arial" ))
-	(pt 1672 416)
-	(pt 1760 416)
 	(bus)
 )
 (connector
@@ -1122,9 +1072,122 @@ applicable agreement for further details.
 	(pt 2696 520)
 	(bus)
 )
+(connector
+	(text "alu_result[31..0]" (rect 1682 400 1761 412)(font "Arial" ))
+	(pt 1672 416)
+	(pt 1760 416)
+	(bus)
+)
+(connector
+	(pt 760 432)
+	(pt 928 432)
+	(bus)
+)
+(connector
+	(pt 760 448)
+	(pt 928 448)
+	(bus)
+)
+(connector
+	(pt 760 464)
+	(pt 928 464)
+	(bus)
+)
+(connector
+	(pt 872 480)
+	(pt 872 712)
+	(bus)
+)
+(connector
+	(pt 872 480)
+	(pt 928 480)
+	(bus)
+)
+(connector
+	(text "clk" (rect 898 480 912 492)(font "Arial" ))
+	(pt 888 496)
+	(pt 928 496)
+)
+(connector
+	(text "clear" (rect 898 496 921 508)(font "Arial" ))
+	(pt 888 512)
+	(pt 928 512)
+)
+(connector
+	(pt 760 576)
+	(pt 760 496)
+	(bus)
+)
+(connector
+	(pt 760 576)
+	(pt 1552 576)
+	(bus)
+)
+(connector
+	(pt 1552 576)
+	(pt 1552 560)
+	(bus)
+)
+(connector
+	(pt 1248 96)
+	(pt 1248 432)
+	(bus)
+)
+(connector
+	(pt 1424 432)
+	(pt 1424 344)
+	(bus)
+)
+(connector
+	(pt 1184 432)
+	(pt 1248 432)
+	(bus)
+)
+(connector
+	(pt 1248 432)
+	(pt 1424 432)
+	(bus)
+)
+(connector
+	(pt 1424 344)
+	(pt 1448 344)
+	(bus)
+)
+(connector
+	(pt 1184 448)
+	(pt 1240 448)
+	(bus)
+)
+(connector
+	(pt 1256 504)
+	(pt 1240 504)
+	(bus)
+)
+(connector
+	(pt 1240 448)
+	(pt 1240 504)
+	(bus)
+)
+(connector
+	(pt 1240 504)
+	(pt 1240 600)
+	(bus)
+)
+(connector
+	(text "write_r_data[31..0]" (rect 1184 448 1274 460)(font "Arial" ))
+	(pt 1184 464)
+	(pt 1216 464)
+	(bus)
+)
+(connector
+	(text "Imm[15..0], write_r_data[15..0]" (rect 2176 376 2328 388)(font "Arial" ))
+	(pt 2288 392)
+	(pt 2176 392)
+	(bus)
+)
 (junction (pt 448 224))
-(junction (pt 1248 440))
 (junction (pt 624 208))
-(junction (pt 1240 504))
 (junction (pt 448 432))
+(junction (pt 1248 432))
+(junction (pt 1240 504))
 (text "2" (rect 2088 464 2095 478)(font "Arial" (font_size 8)))

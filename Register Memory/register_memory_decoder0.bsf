@@ -1,0 +1,263 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 168 560)
+	(text "register_memory_decoder0" (rect 6 1 191 17)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 544 25 556)(font "Arial" ))
+	(port
+		(pt 0 280)
+		(input)
+		(text "data[4..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[4..0]" (rect 20 274 65 287)(font "Arial" (font_size 8)))
+		(line (pt 0 280)(pt 16 280)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "eq0" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq0" (rect 131 26 149 39)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 1))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "eq1" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq1" (rect 131 42 149 55)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 1))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "eq2" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq2" (rect 131 58 149 71)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64)(line_width 1))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "eq3" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq3" (rect 131 74 149 87)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80)(line_width 1))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "eq4" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq4" (rect 131 90 149 103)(font "Arial" (font_size 8)))
+		(line (pt 168 96)(pt 152 96)(line_width 1))
+	)
+	(port
+		(pt 168 112)
+		(output)
+		(text "eq5" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq5" (rect 131 106 149 119)(font "Arial" (font_size 8)))
+		(line (pt 168 112)(pt 152 112)(line_width 1))
+	)
+	(port
+		(pt 168 128)
+		(output)
+		(text "eq6" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq6" (rect 131 122 149 135)(font "Arial" (font_size 8)))
+		(line (pt 168 128)(pt 152 128)(line_width 1))
+	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "eq7" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq7" (rect 131 138 149 151)(font "Arial" (font_size 8)))
+		(line (pt 168 144)(pt 152 144)(line_width 1))
+	)
+	(port
+		(pt 168 160)
+		(output)
+		(text "eq8" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq8" (rect 131 154 149 167)(font "Arial" (font_size 8)))
+		(line (pt 168 160)(pt 152 160)(line_width 1))
+	)
+	(port
+		(pt 168 176)
+		(output)
+		(text "eq9" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq9" (rect 131 170 149 183)(font "Arial" (font_size 8)))
+		(line (pt 168 176)(pt 152 176)(line_width 1))
+	)
+	(port
+		(pt 168 192)
+		(output)
+		(text "eq10" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq10" (rect 125 186 149 199)(font "Arial" (font_size 8)))
+		(line (pt 168 192)(pt 152 192)(line_width 1))
+	)
+	(port
+		(pt 168 208)
+		(output)
+		(text "eq11" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq11" (rect 125 202 149 215)(font "Arial" (font_size 8)))
+		(line (pt 168 208)(pt 152 208)(line_width 1))
+	)
+	(port
+		(pt 168 224)
+		(output)
+		(text "eq12" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq12" (rect 125 218 149 231)(font "Arial" (font_size 8)))
+		(line (pt 168 224)(pt 152 224)(line_width 1))
+	)
+	(port
+		(pt 168 240)
+		(output)
+		(text "eq13" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq13" (rect 125 234 149 247)(font "Arial" (font_size 8)))
+		(line (pt 168 240)(pt 152 240)(line_width 1))
+	)
+	(port
+		(pt 168 256)
+		(output)
+		(text "eq14" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq14" (rect 125 250 149 263)(font "Arial" (font_size 8)))
+		(line (pt 168 256)(pt 152 256)(line_width 1))
+	)
+	(port
+		(pt 168 272)
+		(output)
+		(text "eq15" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq15" (rect 125 266 149 279)(font "Arial" (font_size 8)))
+		(line (pt 168 272)(pt 152 272)(line_width 1))
+	)
+	(port
+		(pt 168 288)
+		(output)
+		(text "eq16" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq16" (rect 125 282 149 295)(font "Arial" (font_size 8)))
+		(line (pt 168 288)(pt 152 288)(line_width 1))
+	)
+	(port
+		(pt 168 304)
+		(output)
+		(text "eq17" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq17" (rect 125 298 149 311)(font "Arial" (font_size 8)))
+		(line (pt 168 304)(pt 152 304)(line_width 1))
+	)
+	(port
+		(pt 168 320)
+		(output)
+		(text "eq18" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq18" (rect 125 314 149 327)(font "Arial" (font_size 8)))
+		(line (pt 168 320)(pt 152 320)(line_width 1))
+	)
+	(port
+		(pt 168 336)
+		(output)
+		(text "eq19" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq19" (rect 125 330 149 343)(font "Arial" (font_size 8)))
+		(line (pt 168 336)(pt 152 336)(line_width 1))
+	)
+	(port
+		(pt 168 352)
+		(output)
+		(text "eq20" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq20" (rect 125 346 149 359)(font "Arial" (font_size 8)))
+		(line (pt 168 352)(pt 152 352)(line_width 1))
+	)
+	(port
+		(pt 168 368)
+		(output)
+		(text "eq21" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq21" (rect 125 362 149 375)(font "Arial" (font_size 8)))
+		(line (pt 168 368)(pt 152 368)(line_width 1))
+	)
+	(port
+		(pt 168 384)
+		(output)
+		(text "eq22" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq22" (rect 125 378 149 391)(font "Arial" (font_size 8)))
+		(line (pt 168 384)(pt 152 384)(line_width 1))
+	)
+	(port
+		(pt 168 400)
+		(output)
+		(text "eq23" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq23" (rect 125 394 149 407)(font "Arial" (font_size 8)))
+		(line (pt 168 400)(pt 152 400)(line_width 1))
+	)
+	(port
+		(pt 168 416)
+		(output)
+		(text "eq24" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq24" (rect 125 410 149 423)(font "Arial" (font_size 8)))
+		(line (pt 168 416)(pt 152 416)(line_width 1))
+	)
+	(port
+		(pt 168 432)
+		(output)
+		(text "eq25" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq25" (rect 125 426 149 439)(font "Arial" (font_size 8)))
+		(line (pt 168 432)(pt 152 432)(line_width 1))
+	)
+	(port
+		(pt 168 448)
+		(output)
+		(text "eq26" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq26" (rect 125 442 149 455)(font "Arial" (font_size 8)))
+		(line (pt 168 448)(pt 152 448)(line_width 1))
+	)
+	(port
+		(pt 168 464)
+		(output)
+		(text "eq27" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq27" (rect 125 458 149 471)(font "Arial" (font_size 8)))
+		(line (pt 168 464)(pt 152 464)(line_width 1))
+	)
+	(port
+		(pt 168 480)
+		(output)
+		(text "eq28" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq28" (rect 125 474 149 487)(font "Arial" (font_size 8)))
+		(line (pt 168 480)(pt 152 480)(line_width 1))
+	)
+	(port
+		(pt 168 496)
+		(output)
+		(text "eq29" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq29" (rect 125 490 149 503)(font "Arial" (font_size 8)))
+		(line (pt 168 496)(pt 152 496)(line_width 1))
+	)
+	(port
+		(pt 168 512)
+		(output)
+		(text "eq30" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq30" (rect 125 506 149 519)(font "Arial" (font_size 8)))
+		(line (pt 168 512)(pt 152 512)(line_width 1))
+	)
+	(port
+		(pt 168 528)
+		(output)
+		(text "eq31" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq31" (rect 125 522 149 535)(font "Arial" (font_size 8)))
+		(line (pt 168 528)(pt 152 528)(line_width 1))
+	)
+	(drawing
+		(line (pt 16 16)(pt 152 16)(line_width 1))
+		(line (pt 152 16)(pt 152 544)(line_width 1))
+		(line (pt 152 544)(pt 16 544)(line_width 1))
+		(line (pt 16 544)(pt 16 16)(line_width 1))
+	)
+)
