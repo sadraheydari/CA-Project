@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -16 248 152 264)
+	(rect -16 240 152 256)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "clear" (rect 5 0 28 12)(font "Arial" ))
 	(pt 168 8)
@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -16 96 152 112)
+	(rect -16 80 152 96)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "write_data[31..0]" (rect 5 0 86 12)(font "Arial" ))
 	(pt 168 8)
@@ -70,9 +70,25 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -16 128 152 144)
+	(rect -16 144 152 160)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "address[7..0]" (rect 5 0 69 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -16 272 152 288)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "wren" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -219,16 +235,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 152 104)
-	(pt 216 104)
-	(bus)
-)
-(connector
-	(pt 152 136)
-	(pt 216 136)
-	(bus)
-)
-(connector
 	(pt 432 104)
 	(pt 464 104)
 	(bus)
@@ -254,11 +260,53 @@ applicable agreement for further details.
 	(pt 464 120)
 )
 (connector
-	(pt 152 256)
-	(pt 544 256)
+	(pt 208 104)
+	(pt 208 88)
+	(bus)
 )
 (connector
-	(pt 544 256)
+	(pt 216 104)
+	(pt 208 104)
+	(bus)
+)
+(connector
+	(pt 208 88)
+	(pt 152 88)
+	(bus)
+)
+(connector
+	(pt 216 136)
+	(pt 160 136)
+	(bus)
+)
+(connector
+	(pt 160 136)
+	(pt 160 152)
+	(bus)
+)
+(connector
+	(pt 160 152)
+	(pt 152 152)
+	(bus)
+)
+(connector
+	(pt 216 120)
+	(pt 176 120)
+)
+(connector
+	(pt 544 248)
+	(pt 152 248)
+)
+(connector
 	(pt 544 168)
+	(pt 544 248)
+)
+(connector
+	(pt 176 120)
+	(pt 176 280)
+)
+(connector
+	(pt 176 280)
+	(pt 152 280)
 )
 (junction (pt 192 184))

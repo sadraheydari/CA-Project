@@ -2863,7 +2863,6 @@ applicable agreement for further details.
 	(pt 480 264)
 )
 (connector
-	(text "<<__$DEF_ALIAS294>>" (rect 450 216 568 228)(font "Arial" )(invisible))
 	(pt 440 232)
 	(pt 480 232)
 	(bus)
@@ -2878,7 +2877,6 @@ applicable agreement for further details.
 	(pt 576 432)
 )
 (connector
-	(text "<<__$DEF_ALIAS340>>" (rect 450 336 568 348)(font "Arial" )(invisible))
 	(pt 440 352)
 	(pt 480 352)
 	(bus)
@@ -3292,12 +3290,6 @@ applicable agreement for further details.
 (connector
 	(pt 432 2136)
 	(pt 472 2136)
-	(bus)
-)
-(connector
-	(text "r16]_out[31..0]" (rect 626 2128 697 2140)(font "Arial" ))
-	(pt 616 2144)
-	(pt 656 2144)
 	(bus)
 )
 (connector
@@ -3826,7 +3818,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS292>>" (rect 450 96 568 108)(font "Arial" )(invisible))
 	(pt 440 112)
 	(pt 480 112)
 	(bus)
@@ -4770,6 +4761,12 @@ applicable agreement for further details.
 	(text "r0_out[31..0]" (rect 1882 -80 1944 -68)(font "Arial" ))
 	(pt 1872 -64)
 	(pt 1912 -64)
+	(bus)
+)
+(connector
+	(text "r16_out[31..0]" (rect 626 2128 694 2140)(font "Arial" ))
+	(pt 616 2144)
+	(pt 656 2144)
 	(bus)
 )
 (junction (pt 440 112))
