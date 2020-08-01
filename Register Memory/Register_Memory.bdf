@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 144 104 312 120)
+	(rect 144 152 312 168)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "write_data[31..0]" (rect 5 0 86 12)(font "Arial" ))
 	(pt 168 8)
@@ -2724,6 +2724,24 @@ applicable agreement for further details.
 		(line (pt 22 64)(pt 16 70)(line_width 1))
 	)
 )
+(symbol
+	(rect 432 56 464 88)
+	(text "GND" (rect 3 6 24 16)(font "Arial" (font_size 6)))
+	(text "inst33" (rect 0 -1 29 11)(font "Arial" )(invisible))
+	(port
+		(pt 16 32)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 9 20 14 32)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 16 32)(line_width 1))
+	)
+	(drawing
+		(line (pt 24 24)(pt 16 16)(line_width 1))
+		(line (pt 16 16)(pt 8 24)(line_width 1))
+		(line (pt 24 24)(pt 8 24)(line_width 1))
+	)
+	(rotate180)
+)
 (connector
 	(text "clear" (rect 538 176 561 188)(font "Arial" ))
 	(pt 528 192)
@@ -2902,13 +2920,11 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS658>>" (rect 450 464 568 476)(font "Arial" )(invisible))
 	(pt 480 480)
 	(pt 440 480)
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS660>>" (rect 623 519 635 637)(font "Arial" )(vertical)(invisible))
 	(pt 576 544)
 	(pt 576 560)
 )
@@ -2932,7 +2948,6 @@ applicable agreement for further details.
 	(pt 622 680)
 )
 (connector
-	(text "<<__$DEF_ALIAS705>>" (rect 450 584 568 596)(font "Arial" )(invisible))
 	(pt 440 600)
 	(pt 480 600)
 	(bus)
@@ -2952,7 +2967,6 @@ applicable agreement for further details.
 	(pt 622 808)
 )
 (connector
-	(text "<<__$DEF_ALIAS727>>" (rect 450 712 568 724)(font "Arial" )(invisible))
 	(pt 440 728)
 	(pt 480 728)
 	(bus)
@@ -3810,26 +3824,6 @@ applicable agreement for further details.
 (connector
 	(pt 440 1096)
 	(pt 432 1096)
-	(bus)
-)
-(connector
-	(pt 312 112)
-	(pt 440 112)
-	(bus)
-)
-(connector
-	(pt 440 112)
-	(pt 480 112)
-	(bus)
-)
-(connector
-	(pt 440 232)
-	(pt 440 112)
-	(bus)
-)
-(connector
-	(pt 440 352)
-	(pt 440 232)
 	(bus)
 )
 (connector
@@ -4769,7 +4763,31 @@ applicable agreement for further details.
 	(pt 656 2144)
 	(bus)
 )
-(junction (pt 440 112))
+(connector
+	(pt 440 160)
+	(pt 312 160)
+	(bus)
+)
+(connector
+	(pt 440 160)
+	(pt 440 232)
+	(bus)
+)
+(connector
+	(pt 440 232)
+	(pt 440 352)
+	(bus)
+)
+(connector
+	(pt 480 112)
+	(pt 448 112)
+	(bus)
+)
+(connector
+	(pt 448 112)
+	(pt 448 88)
+	(bus)
+)
 (junction (pt 440 232))
 (junction (pt 440 352))
 (junction (pt 440 480))
