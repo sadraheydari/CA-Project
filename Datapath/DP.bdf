@@ -70,22 +70,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 600 176 616)
-	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
-	(text "ALU_Control[3..0]" (rect 5 0 93 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 100 12)(pt 125 12)(line_width 1))
-		(line (pt 100 4)(pt 125 4)(line_width 1))
-		(line (pt 129 8)(pt 176 8)(line_width 1))
-		(line (pt 100 12)(pt 100 4)(line_width 1))
-		(line (pt 125 4)(pt 129 8)(line_width 1))
-		(line (pt 125 12)(pt 129 8)(line_width 1))
-	)
-	(text "GND" (rect 144 7 165 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 8 672 176 688)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "sel[6..0]" (rect 5 0 45 12)(font "Arial" ))
@@ -115,6 +99,22 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8)(line_width 1))
 	)
 	(text "GND" (rect 136 7 157 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 0 600 176 616)
+	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
+	(text "alu_control[3..0]" (rect 5 0 84 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12)(line_width 1))
+		(line (pt 100 4)(pt 125 4)(line_width 1))
+		(line (pt 129 8)(pt 176 8)(line_width 1))
+		(line (pt 100 12)(pt 100 4)(line_width 1))
+		(line (pt 125 4)(pt 129 8)(line_width 1))
+		(line (pt 125 12)(pt 129 8)(line_width 1))
+	)
+	(text "GND" (rect 144 7 165 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -1126,12 +1126,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ALU_Control[3..0]" (rect 1490 264 1578 276)(font "Arial" ))
-	(pt 1480 280)
-	(pt 1576 280)
-	(bus)
-)
-(connector
 	(pt 1576 280)
 	(pt 1576 296)
 	(bus)
@@ -1361,6 +1355,12 @@ applicable agreement for further details.
 (connector
 	(pt 768 376)
 	(pt 808 376)
+	(bus)
+)
+(connector
+	(text "alu_control[3..0]" (rect 1490 264 1569 276)(font "Arial" ))
+	(pt 1480 280)
+	(pt 1576 280)
 	(bus)
 )
 (junction (pt 448 224))
