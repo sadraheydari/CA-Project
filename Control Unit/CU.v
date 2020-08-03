@@ -73,6 +73,25 @@ module CU(
             end
             
 
+            if (opcode >= 6'b000001 & opcode <= 6'b001111) begin // ALU function
+                alu_control = opcode[3:0];
+            end else if (opcode >= 6'b010010 & opcode <= 6'b010111) begin  // Immidiade ALU
+                if (opcode == 6'b010010)        // ADDI
+                    alu_control = 4'b0001;
+                else if (opcode == 6'b010011)   // SUBI
+                    alu_control = 4'b0010;
+                else if (opcode == 6'b010100)   // MULI
+                    alu_control == 4'b0011;
+                else if (opcode == 6'b010101)   // DIVI
+                    alu_control = 4'b0100;
+                else if (opcode == 6'b010110)   // NANDI
+                    alu_control = 4'1001;
+                else if (opcode == 6'b010111)   // XNORI
+                    alu_control = 4'b1010;
+            end else begin
+                alu_control = 4'b0000;
+            end
+
         end else begin
             counter = counter + 1;
         end    
