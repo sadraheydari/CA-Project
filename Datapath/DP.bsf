@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 240 176)
+	(rect 16 16 232 176)
 	(text "DP" (rect 5 0 20 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "ALU_Control[3..0]" (rect 0 0 100 14)(font "Arial" (font_size 8)))
-		(text "ALU_Control[3..0]" (rect 21 75 121 89)(font "Arial" (font_size 8)))
+		(text "alu_control[3..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "alu_control[3..0]" (rect 21 75 111 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
@@ -66,27 +66,27 @@ applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
-		(pt 224 32)
+		(pt 216 32)
 		(output)
 		(text "equ" (rect 0 0 21 14)(font "Arial" (font_size 8)))
-		(text "equ" (rect 182 27 203 41)(font "Arial" (font_size 8)))
-		(line (pt 224 32)(pt 208 32)(line_width 1))
+		(text "equ" (rect 174 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 1))
 	)
 	(port
-		(pt 224 48)
+		(pt 216 48)
 		(output)
 		(text "les" (rect 0 0 16 14)(font "Arial" (font_size 8)))
-		(text "les" (rect 187 43 203 57)(font "Arial" (font_size 8)))
-		(line (pt 224 48)(pt 208 48)(line_width 1))
+		(text "les" (rect 179 43 195 57)(font "Arial" (font_size 8)))
+		(line (pt 216 48)(pt 200 48)(line_width 1))
 	)
 	(port
-		(pt 224 64)
+		(pt 216 64)
 		(output)
 		(text "opcode[5..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
-		(text "opcode[5..0]" (rect 133 59 203 73)(font "Arial" (font_size 8)))
-		(line (pt 224 64)(pt 208 64)(line_width 3))
+		(text "opcode[5..0]" (rect 125 59 195 73)(font "Arial" (font_size 8)))
+		(line (pt 216 64)(pt 200 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 208 144)(line_width 1))
+		(rectangle (rect 16 16 200 144)(line_width 1))
 	)
 )
