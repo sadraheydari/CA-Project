@@ -9,7 +9,6 @@ module CU(
     output reg [6:0] sel
     );
 
-    end
     always @ (posedge clk) begin
         if (opcode >= 6'd28 & opcode <= 6'd31) begin // instruction memory R1
             im_control[0] = 0;

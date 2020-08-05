@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 115.837 ns
+From           : pin_name2[1]
+To             : DP:inst|Register_Memory:inst14|register:inst18|lpm_ff:lpm_ff_component|dffs[12]
+From Clock     : --
+To Clock       : pin_name
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 32.188 ns
+From           : DP:inst|Instruction_Memory:inst3|ir:inst4|lpm_ff:lpm_ff_component|dffs[16]
+To             : pin_name6
+From Clock     : pin_name
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 34.969 ns
+From           : pin_name2[1]
+To             : pin_name6
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.592 ns
+From           : pin_name8[6]
+To             : DP:inst|Register_Memory:inst14|register:inst16|lpm_ff:lpm_ff_component|dffs[30]
+From Clock     : --
+To Clock       : pin_name
+Failed Paths   : 0
+
+Type           : Clock Setup: 'pin_name'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.85 MHz ( period = 113.056 ns )
+From           : DP:inst|Instruction_Memory:inst3|ir:inst4|lpm_ff:lpm_ff_component|dffs[16]
+To             : DP:inst|Register_Memory:inst14|register:inst18|lpm_ff:lpm_ff_component|dffs[12]
+From Clock     : pin_name
+To Clock       : pin_name
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
