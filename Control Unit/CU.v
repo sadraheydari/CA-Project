@@ -32,7 +32,7 @@ module CU(
 
         if (opcode == 6'd28) begin // pc input mux  (mux 0)
             sel[2:0] = 3'd0;
-        end else if (opcode == 6'd30 | opcode == 6'd31) begin
+        end else if ((opcode == 6'd30 & equ) | (opcode == 6'd31 & les)) begin
             sel[2:0] = 3'd1;
         end else if (opcode == 6'd29) begin
             sel[2:0] = 3'd2;
